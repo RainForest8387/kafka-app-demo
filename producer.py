@@ -8,7 +8,7 @@ def json_serializer(data):
 
 
 producer = KafkaProducer(
-    bootstrap_server=['localhost:9092'],
+    bootstrap_servers=['localhost:9092'],
     value_serializer=json_serializer
 )
 
